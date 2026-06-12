@@ -184,14 +184,6 @@ You can also guard against older AquaLang versions during your `onEnable`:
 AquaLangAPI.requireVersion(3);
 ```
 
-### AquaLangAddon
-
-`AquaLangAddon` is a small example plugin (in this repo) that shows the API in action: it opens a
-paginated **language-selection GUI** on first join and via `/aquaaddon`, then calls
-`AquaLangAPI.setLanguage(...)` and `send(...)`. Use it as a reference for building your own
-integration. It ships its menu translations under the `aquaaddon` namespace
-(`languages/<lang>/aquaaddon.yml`).
-
 ### GitHub sync
 
 Instead of editing language files on every server by hand, AquaLang can keep them in sync with a
@@ -238,6 +230,4 @@ local folder to block path-traversal (Zip-Slip), so a malicious archive can't wr
 
 ### License
 
-Free to use, including on commercial servers. You may **not** remove or alter the
-creator (**Senkex**) and company (**Aquatic Studios**) credits, nor claim the code
-as your own. See [LICENSE](LICENSE) for the full terms. Powered by **Aquatic Studios** © 2026.
+See [LICENSE](LICENSE) for the full terms. Powered by **Aquatic Studios** © 2026.
