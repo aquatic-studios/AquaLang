@@ -1,0 +1,39 @@
+allprojects {
+    group = 'com.aquaticstudios'
+    version = '1.0.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+        maven {
+            name = 'spigotmc-repo'
+            url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        }
+        maven {
+            name = 'sonatype'
+            url = 'https://oss.sonatype.org/content/groups/public/'
+        }
+        maven {
+            name = 'placeholderapi'
+            url = 'https://repo.extendedclip.com/releases/'
+        }
+        maven {
+            name = 'codemc'
+            url = 'https://repo.codemc.org/repository/maven-public/'
+        }
+        maven {
+            name = 'jitpack'
+            url = 'https://jitpack.io'
+        }
+    }
+
+    def targetJavaVersion = 8
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.release.set(targetJavaVersion)
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/addon/AquaLang.addon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/addon/AquaLang.addon.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/AquaLang.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/AquaLang.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugin/AquaLang.plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/plugin/AquaLang.plugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugin/AquaLang.plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/plugin/AquaLang.plugin.test.iml" />
+    </modules>
+  </component>
+</project>

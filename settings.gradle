@@ -1,0 +1,5 @@
+rootProject.name = 'AquaLang'
+
+include 'api'
+include 'plugin'
+include 'addon'
