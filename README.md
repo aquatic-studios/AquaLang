@@ -1,10 +1,9 @@
 # AquaLang
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.8%2B-dark_green.svg)](https://shields.io/)
 [![Java](https://img.shields.io/badge/Java-8-orange.svg)](https://shields.io/)
-[![Folia](https://img.shields.io/badge/Folia-supported-blueviolet.svg)](https://papermc.io/software/folia)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.8%2B-dark_green.svg)](https://shields.io/)
+[![Folia](https://img.shields.io/badge/Folia-Supported-blueviolet.svg)](https://papermc.io/software/folia)
 [![JitPack](https://jitpack.io/v/aquatic-studios/AquaLang.svg)](https://jitpack.io/#aquatic-studios/AquaLang)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Multi-language plugin for Minecraft with PlaceholderAPI integration, GitHub-based synchronization
 of language files and a small, professional API so any other plugin can translate its messages
@@ -239,4 +238,6 @@ local folder to block path-traversal (Zip-Slip), so a malicious archive can't wr
 
 ### License
 
-Released under the MIT License. Powered by **Aquatic Studios** © 2026.
+Free to use, including on commercial servers. You may **not** remove or alter the
+creator (**Senkex**) and company (**Aquatic Studios**) credits, nor claim the code
+as your own. See [LICENSE](LICENSE) for the full terms. Powered by **Aquatic Studios** © 2026.
