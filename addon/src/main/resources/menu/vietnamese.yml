@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFNgôn ngữ &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Nhấp để chọn ngôn ngữ này"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFTrang sau &8->"
+    lore:
+      - "&7Đi tới trang sau"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFTrang trước"
+    lore:
+      - "&7Quay lại trang trước"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fĐã đặt ngôn ngữ thành &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Ngôn ngữ không hợp lệ: &f<lang>"

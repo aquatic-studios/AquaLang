@@ -1,0 +1,17 @@
+#                                                            Developed by Senkex
+#                                                        (Aquatic Studios @ (C) 2026)
+
+name: AquaLangAddon
+version: '${version}'
+author: 'Senkex'
+
+api-version: '1.16'
+folia-supported: true
+main: com.aquaticstudios.aqualang.addon.AquaLangAddon
+
+depend: [AquaLang]
+
+permissions:
+  aquaaddon.menu:
+    description: Open language menu
+    default: true

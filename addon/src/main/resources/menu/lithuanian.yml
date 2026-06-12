@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFKalbos &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Spustelėkite, kad pasirinktumėte šią kalbą"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFKitas puslapis &8->"
+    lore:
+      - "&7Eiti į kitą puslapį"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFAnkstesnis puslapis"
+    lore:
+      - "&7Grįžti į ankstesnį puslapį"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fKalba nustatyta į &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Neteisinga kalba: &f<lang>"

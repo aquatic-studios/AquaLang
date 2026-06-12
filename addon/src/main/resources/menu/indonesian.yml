@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFBahasa &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Klik untuk memilih bahasa ini"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFHalaman berikutnya &8->"
+    lore:
+      - "&7Ke halaman berikutnya"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFHalaman sebelumnya"
+    lore:
+      - "&7Kembali ke halaman sebelumnya"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fBahasa diatur ke &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Bahasa tidak valid: &f<lang>"

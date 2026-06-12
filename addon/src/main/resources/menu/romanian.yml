@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFLimbi &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Apasă pentru a selecta această limbă"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFPagina următoare &8->"
+    lore:
+      - "&7Mergi la pagina următoare"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFPagina anterioară"
+    lore:
+      - "&7Înapoi la pagina anterioară"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fLimba setată la &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Limbă invalidă: &f<lang>"

@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFDiller &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Bu dili seçmek için tıkla"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFSonraki sayfa &8->"
+    lore:
+      - "&7Sonraki sayfaya git"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFÖnceki sayfa"
+    lore:
+      - "&7Önceki sayfaya dön"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fDil &#8BD5FF<lang> &folarak ayarlandı."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Geçersiz dil: &f<lang>"

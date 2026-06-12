@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFNyelvek &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Kattints a nyelv kiválasztásához"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFKövetkező oldal &8->"
+    lore:
+      - "&7Ugrás a következő oldalra"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFElőző oldal"
+    lore:
+      - "&7Vissza az előző oldalra"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fNyelv beállítva erre: &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Érvénytelen nyelv: &f<lang>"

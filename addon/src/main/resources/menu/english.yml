@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFLanguages &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Click to select this language"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFNext page &8->"
+    lore:
+      - "&7Go to the next page"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFPrevious page"
+    lore:
+      - "&7Go back to the previous page"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fLanguage set to &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Invalid language: &f<lang>"

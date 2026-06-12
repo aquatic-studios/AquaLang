@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFF语言 &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7点击选择此语言"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FF下一页 &8->"
+    lore:
+      - "&7前往下一页"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FF上一页"
+    lore:
+      - "&7返回上一页"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &f语言已设置为 &#8BD5FF<lang>&f。"
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535无效的语言：&f<lang>"

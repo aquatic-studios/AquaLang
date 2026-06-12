@@ -1,0 +1,21 @@
+// AquaLangAddon — example plugin showcasing the AquaLang API.
+// It needs AquaLang installed at runtime, so nothing is shaded here.
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+    compileOnly project(':api')
+}
+
+tasks.named('jar') {
+    archiveBaseName.set('AquaLangAddon')
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}

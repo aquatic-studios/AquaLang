@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFF言語 &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7クリックしてこの言語を選択"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FF次のページ &8->"
+    lore:
+      - "&7次のページへ"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FF前のページ"
+    lore:
+      - "&7前のページに戻る"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &f言語を &#8BD5FF<lang>&f に設定しました。"
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535無効な言語: &f<lang>"

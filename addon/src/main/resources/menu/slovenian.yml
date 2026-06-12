@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFJeziki &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Klikni za izbiro tega jezika"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFNaslednja stran &8->"
+    lore:
+      - "&7Pojdi na naslednjo stran"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFPrejšnja stran"
+    lore:
+      - "&7Nazaj na prejšnjo stran"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fJezik nastavljen na &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Neveljaven jezik: &f<lang>"

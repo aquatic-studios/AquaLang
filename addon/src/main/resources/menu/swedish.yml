@@ -1,0 +1,23 @@
+menu:
+  title: "&#35ADFFSpråk &7> &f<page>/<pages>"
+  language-item:
+    material: "PAPER"
+    name: "&#35ADFF&l<lang>"
+    lore:
+      - "&7Klicka för att välja detta språk"
+
+arrows:
+  next:
+    material: "ARROW"
+    name: "&#8BD5FFNästa sida &8->"
+    lore:
+      - "&7Gå till nästa sida"
+  previous:
+    material: "ARROW"
+    name: "&#8BD5FF&l<- &#8BD5FFFöregående sida"
+    lore:
+      - "&7Gå tillbaka till föregående sida"
+
+messages:
+  selected: "&#35ADFF&lAquaLang &#CDCDCD» &fSpråk inställt på &#8BD5FF<lang>&f."
+  invalid: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Ogiltigt språk: &f<lang>"
