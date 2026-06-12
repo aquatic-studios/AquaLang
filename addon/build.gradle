@@ -1,9 +1,6 @@
-// AquaLangAddon — example plugin showcasing the AquaLang API.
-// It needs AquaLang installed at runtime, so nothing is shaded here.
-
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
-    compileOnly 'me.clip:placeholderapi:2.11.6'
+    compileOnly 'me.clip:placeholderapi:2.12.2'
     compileOnly project(':api')
 }
 
