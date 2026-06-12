@@ -1,0 +1,105 @@
+database:
+  type: "h2" # h2, sqlite, mysql, mariadb, postgresql
+
+  # only used by mysql, mariadb and postgresql
+  address: "localhost"
+  port: 3306
+  database: "aqualang"
+  username: "root"
+  password: "password"
+
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 10
+    maximum-lifetime: 1800000
+    keepalive-time: 0
+    connection-timeout: 5000
+
+# language used when a player has none set, or when a translation is missing
+default: "english"
+
+# languages to load, format: "locale:name:file"
+# the folder and file are created automatically if missing
+register:
+  languages:
+    - "en_US:english:english.yml"
+    - "es_ES:spanish:spanish.yml"
+    - "ru_RU:russian:russian.yml"
+    - "zh_CN:chinese:chinese.yml"
+    - "ja_JP:japanese:japanese.yml"
+    - "ko_KR:korean:korean.yml"
+    - "fr_FR:french:french.yml"
+    - "de_DE:german:german.yml"
+    - "it_IT:italian:italian.yml"
+    - "pl_PL:polish:polish.yml"
+    - "pt_BR:portuguese:portuguese.yml"
+    - "vi_VN:vietnamese:vietnamese.yml"
+    - "sv_SE:swedish:swedish.yml"
+    - "nl_NL:dutch:dutch.yml"
+    - "tr_TR:turkish:turkish.yml"
+    - "ro_RO:romanian:romanian.yml"
+    - "lt_LT:lithuanian:lithuanian.yml"
+    - "zh_TW:traditional_chinese:traditional_chinese.yml"
+    - "id_ID:indonesian:indonesian.yml"
+    - "hu_HU:hungarian:hungarian.yml"
+    - "sl_SI:slovenian:slovenian.yml"
+
+# shortcut commands players use to change their own language, like /lang english
+# each line becomes its own command, add or remove freely then restart
+commands:
+  - lang
+  - language
+  - idioma
+  - lenguaje
+  - lingua
+  - langue
+  - sprache
+  - jezyk
+  - yazyk
+  - язык
+  - yuyan
+  - 语言
+  - ngonngu
+  - sprak
+  - taal
+  - dil
+  - limba
+  - kalba
+  - 語言
+  - bahasa
+  - nyelv
+  - jezik
+
+performance:
+  # reload a language file automatically when you edit it on disk
+  auto-reload-languages: false
+
+  # wait this long after an edit before reloading, so quick saves count as one (ms, 50-5000)
+  reload-debounce-ms: 250
+
+  # load a player's language when they join so gameplay never touches the database
+  # set to false to load it on first use instead (one query per player)
+  preload-on-join: true
+
+  # spams the console with extra info, only turn on if someone asks you to
+  debug: false
+
+# pull language files straight from a http://github.com/ repository
+github:
+  repository:
+    name: "owner/repo"
+    branch: "main"
+
+  authentication:
+    type: "none" # none or token
+    token: "" # personal access token, only needed when type is token
+
+  paths:
+    remote-root: "languages" # folder inside the repo
+    local-root: "languages" # folder inside the plugin
+
+  sync:
+    create-missing: true # download files you don't have locally
+    overwrite-existing: true # replace your local files with the repo ones
+    delete-missing: false # delete local files that aren't in the repo
+    reload-after-sync: true # reload the languages once it's done

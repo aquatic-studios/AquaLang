@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &fVersion: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &fVisa detta meddelande
+  &#8BD5FF  /aqualang list &#CDCDCD- &fLista registrerade språk
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &fVisa kommandoalias
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &fÄndra en spelares språk
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &fÅterställ språk till standard
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &fVisa spelarens språk
+  &#8BD5FF  /aqualang reload &#CDCDCD- &fLadda om pluginet och språken
+  &#8BD5FF  /aqualang github status &#CDCDCD- &fVisa GitHub-anslutningsstatus och förvarsinformation
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &fSynkronisera alla språk med GitHub-förvaret
+  <empty>
+
+not_found_path: "&#FF3535Sökväg hittades inte: &#FFE162{path}"
+invalid_lang_format: "&#FF3535Ogiltigt språkformat: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535Ogiltigt platshållarformat: &#FFE162{placeholder}"
+file_not_found: "&#FF3535Filen hittades inte: &#FFE162{file}"
+not_translated: "&#FFE162Inte översatt: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fRegistrerade språk:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fKommandoalias:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Korrekt användning: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Korrekt användning: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Korrekt användning: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Korrekt användning: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &fSpråk för &#CDCDCD{player} &#8BD5FF({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFSpråket för &f{player} &#8BD5FFhar ändrats till &#FFE162{language}&#8BD5FF."
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFDitt språk har ändrats till &#FFE162{language}&#8BD5FF."
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFSpråket för &f{player} &#8BD5FFhar återställts."
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87Omladdning lyckades."
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Korrekt användning: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFStartar GitHub-synkronisering..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFGitHub-synkronisering slutförd."
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162Inga ändringar upptäcktes. Allt är redan uppdaterat."
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535GitHub-synkronisering misslyckades. Kontrollera konsolen."
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fGitHub-synkroniseringsstatus:"
+    repository: "&#CDCDCD  • &#8BD5FFFörvar: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FFGren: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FFAutentisering: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FFFjärrsökväg: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FFLokal sökväg: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FFSkapa saknade filer: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FFSkriv över befintliga filer: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FFTa bort saknade filer: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FFLadda om efter synk: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Du har inte behörighet att använda detta kommando."
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Språket &#FFE162{input} &#FF3535är inte registrerat."

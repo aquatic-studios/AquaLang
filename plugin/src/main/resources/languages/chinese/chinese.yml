@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &f版本: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &f显示此消息
+  &#8BD5FF  /aqualang list &#CDCDCD- &f列出已注册的语言
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &f显示命令别名
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &f更改玩家语言
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &f恢复默认语言
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &f显示玩家语言
+  &#8BD5FF  /aqualang reload &#CDCDCD- &f重新加载插件和语言
+  &#8BD5FF  /aqualang github status &#CDCDCD- &f查看 GitHub 连接状态和仓库信息
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &f与 GitHub 仓库同步所有语言
+  <empty>
+
+not_found_path: "&#FF3535未找到路径: &#FFE162{path}"
+invalid_lang_format: "&#FF3535无效的语言格式: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535无效的占位符格式: &#FFE162{placeholder}"
+file_not_found: "&#FF3535未找到文件: &#FFE162{file}"
+not_translated: "&#FFE162未翻译: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &f已注册的语言:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &f命令别名:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正确用法: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正确用法: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正确用法: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正确用法: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &f玩家 &#CDCDCD{player} &#8BD5FF的语言 ({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FF玩家 &f{player} &#8BD5FF的语言已更改为 &#FFE162{language}&#8BD5FF."
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FF你的语言已更改为 &#FFE162{language}&#8BD5FF."
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FF玩家 &f{player} &#8BD5FF的语言已重置."
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87重新加载成功."
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正确用法: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FF正在开始 GitHub 同步..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFGitHub 同步已成功完成。"
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162未检测到更改，所有内容均为最新。"
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535GitHub 同步失败，请检查控制台。"
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fGitHub 同步状态:"
+    repository: "&#CDCDCD  • &#8BD5FF仓库: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FF分支: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FF认证方式: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FF远程路径: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FF本地路径: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FF创建缺失文件: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FF覆盖已有文件: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FF删除多余文件: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FF同步后重新加载: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535你没有权限使用此命令."
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535语言 &#FFE162{input} &#FF3535未注册."

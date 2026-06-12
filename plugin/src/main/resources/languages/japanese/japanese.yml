@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &fバージョン: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &fこのメッセージを表示
+  &#8BD5FF  /aqualang list &#CDCDCD- &f登録されている言語を一覧表示
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &fコマンドの別名を表示
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &fプレイヤーの言語を変更
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &fデフォルト言語に戻す
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &fプレイヤーの言語を表示
+  &#8BD5FF  /aqualang reload &#CDCDCD- &fプラグインと言語を再読み込み
+  &#8BD5FF  /aqualang github status &#CDCDCD- &fGitHub の接続状態とリポジトリ情報を表示
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &fすべての言語を GitHub リポジトリと同期
+  <empty>
+
+not_found_path: "&#FF3535パスが見つかりません: &#FFE162{path}"
+invalid_lang_format: "&#FF3535無効な言語形式: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535無効なプレースホルダー形式: &#FFE162{placeholder}"
+file_not_found: "&#FF3535ファイルが見つかりません: &#FFE162{file}"
+not_translated: "&#FFE162未翻訳: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &f登録済み言語:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fコマンドの別名:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正しい使い方: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正しい使い方: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正しい使い方: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正しい使い方: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &fプレイヤー &#CDCDCD{player} &#8BD5FFの言語 ({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFプレイヤー &f{player} &#8BD5FFの言語が &#FFE162{language}&#8BD5FF に変更されました。"
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFあなたの言語が &#FFE162{language}&#8BD5FF に変更されました。"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFプレイヤー &f{player} &#8BD5FFの言語がリセットされました。"
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87再読み込みが完了しました。"
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535正しい使い方: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFGitHub 同期を開始しています..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFGitHub 同期が正常に完了しました。"
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162変更は検出されませんでした。すべて最新です。"
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535GitHub 同期に失敗しました。コンソールを確認してください。"
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fGitHub 同期ステータス:"
+    repository: "&#CDCDCD  • &#8BD5FFリポジトリ: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FFブランチ: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FF認証方式: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FFリモートパス: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FFローカルパス: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FF不足ファイルを作成: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FF既存ファイルを上書き: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FF不要ファイルを削除: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FF同期後に再読み込み: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535このコマンドを使用する権限がありません。"
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535言語 &#FFE162{input} &#FF3535は登録されていません。"

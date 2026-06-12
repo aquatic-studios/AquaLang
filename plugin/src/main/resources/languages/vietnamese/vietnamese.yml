@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &fPhiên bản: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &fHiển thị tin nhắn này
+  &#8BD5FF  /aqualang list &#CDCDCD- &fLiệt kê các ngôn ngữ đã đăng ký
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &fHiển thị bí danh lệnh
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &fThay đổi ngôn ngữ của người chơi
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &fĐặt lại ngôn ngữ về mặc định
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &fHiển thị ngôn ngữ của người chơi
+  &#8BD5FF  /aqualang reload &#CDCDCD- &fTải lại plugin và ngôn ngữ
+  &#8BD5FF  /aqualang github status &#CDCDCD- &fXem trạng thái kết nối GitHub và thông tin kho lưu trữ
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &fĐồng bộ tất cả ngôn ngữ với kho GitHub
+  <empty>
+
+not_found_path: "&#FF3535Không tìm thấy đường dẫn: &#FFE162{path}"
+invalid_lang_format: "&#FF3535Định dạng ngôn ngữ không hợp lệ: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535Định dạng placeholder không hợp lệ: &#FFE162{placeholder}"
+file_not_found: "&#FF3535Không tìm thấy tệp: &#FFE162{file}"
+not_translated: "&#FFE162Chưa dịch: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fCác ngôn ngữ đã đăng ký:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fBí danh lệnh:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Cách dùng đúng: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Cách dùng đúng: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Cách dùng đúng: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Cách dùng đúng: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &fNgôn ngữ của &#CDCDCD{player} &#8BD5FF({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFNgôn ngữ của &f{player} &#8BD5FFđã được đổi thành &#FFE162{language}&#8BD5FF."
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFNgôn ngữ của bạn đã được đổi thành &#FFE162{language}&#8BD5FF."
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFNgôn ngữ của &f{player} &#8BD5FFđã được đặt lại."
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87Tải lại thành công."
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Cách dùng đúng: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFĐang bắt đầu đồng bộ GitHub..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFĐồng bộ GitHub hoàn tất thành công."
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162Không phát hiện thay đổi. Mọi thứ đã được cập nhật."
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Đồng bộ GitHub thất bại. Kiểm tra console để biết chi tiết."
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fTrạng thái đồng bộ GitHub:"
+    repository: "&#CDCDCD  • &#8BD5FFKho lưu trữ: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FFNhánh: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FFXác thực: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FFĐường dẫn từ xa: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FFĐường dẫn cục bộ: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FFTạo tệp bị thiếu: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FFGhi đè tệp hiện có: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FFXóa tệp bị thiếu: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FFTải lại sau khi đồng bộ: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Bạn không có quyền sử dụng lệnh này."
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Ngôn ngữ &#FFE162{input} &#FF3535chưa được đăng ký."

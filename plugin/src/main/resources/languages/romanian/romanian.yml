@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &fVersiune: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &fAfișează acest mesaj
+  &#8BD5FF  /aqualang list &#CDCDCD- &fListează limbile înregistrate
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &fAfișează aliasurile comenzilor
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &fSchimbă limba unui jucător
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &fResetează limba la cea implicită
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &fAfișează limba jucătorului
+  &#8BD5FF  /aqualang reload &#CDCDCD- &fReîncarcă plugin-ul și limbile
+  &#8BD5FF  /aqualang github status &#CDCDCD- &fVezi starea conexiunii GitHub și informațiile depozitului
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &fSincronizează toate limbile cu depozitul GitHub
+  <empty>
+
+not_found_path: "&#FF3535Cale negăsită: &#FFE162{path}"
+invalid_lang_format: "&#FF3535Format de limbă invalid: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535Format de placeholder invalid: &#FFE162{placeholder}"
+file_not_found: "&#FF3535Fișier negăsit: &#FFE162{file}"
+not_translated: "&#FFE162Netradus: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fLimbi înregistrate:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fAliasuri comenzi:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Utilizare corectă: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Utilizare corectă: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Utilizare corectă: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Utilizare corectă: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &fLimba lui &#CDCDCD{player} &#8BD5FF({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFLimba lui &f{player} &#8BD5FFa fost schimbată în &#FFE162{language}&#8BD5FF."
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFLimba ta a fost schimbată în &#FFE162{language}&#8BD5FF."
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFLimba lui &f{player} &#8BD5FFa fost resetată."
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87Reîncărcat cu succes."
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Utilizare corectă: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFSe începe sincronizarea GitHub..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFSincronizarea GitHub s-a finalizat cu succes."
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162Nicio modificare detectată. Totul este deja actualizat."
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Sincronizarea GitHub a eșuat. Verifică consola."
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fStarea sincronizării GitHub:"
+    repository: "&#CDCDCD  • &#8BD5FFDepozit: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FFRamură: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FFAutentificare: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FFCale la distanță: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FFCale locală: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FFCreează fișierele lipsă: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FFSuprascrie fișierele existente: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FFȘterge fișierele lipsă: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FFReîncarcă după sincronizare: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Nu ai permisiunea de a folosi această comandă."
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Limba &#FFE162{input} &#FF3535nu este înregistrată."

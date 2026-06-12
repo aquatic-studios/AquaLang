@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &fVersión: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &fMuestra este mensaje
+  &#8BD5FF  /aqualang list &#CDCDCD- &fLista los idiomas registrados
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &fMuestra los alias del comando
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &fCambia el idioma de un jugador
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &fRestaura el idioma al predeterminado
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &fMuestra el idioma del jugador
+  &#8BD5FF  /aqualang reload &#CDCDCD- &fRecarga el plugin y los idiomas
+  &#8BD5FF  /aqualang github status &#CDCDCD- &fVer el estado de conexión con GitHub y la información del repositorio
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &fSincronizar todos los idiomas con el repositorio de GitHub
+  <empty>
+
+not_found_path: "&#FF3535Ruta no encontrada: &#FFE162{path}"
+invalid_lang_format: "&#FF3535Formato de idioma inválido: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535Formato de placeholder inválido: &#FFE162{placeholder}"
+file_not_found: "&#FF3535Archivo no encontrado: &#FFE162{file}"
+not_translated: "&#FFE162No traducido: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fIdiomas registrados:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fAlias de comandos:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Uso correcto: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Uso correcto: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Uso correcto: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Uso correcto: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &fIdioma de &#CDCDCD{player} &#8BD5FF({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFEl idioma de &f{player} &#8BD5FFha sido cambiado a &#FFE162{language}&#8BD5FF."
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFTu idioma ha sido cambiado a &#FFE162{language}&#8BD5FF."
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFEl idioma de &f{player} &#8BD5FFha sido restablecido."
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87Recargado correctamente."
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Uso correcto: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFIniciando sincronización con GitHub..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFSincronización con GitHub completada correctamente."
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162No se detectaron cambios. Todo está actualizado."
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535La sincronización con GitHub falló. Revisa la consola."
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fEstado de sincronización con GitHub:"
+    repository: "&#CDCDCD  • &#8BD5FFRepositorio: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FFRama: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FFAutenticación: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FFRuta remota: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FFRuta local: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FFCrear archivos faltantes: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FFSobrescribir archivos existentes: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FFEliminar archivos faltantes: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FFRecargar después de sincronizar: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535No tienes permiso para usar este comando."
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535El idioma &#FFE162{input} &#FF3535no está registrado."

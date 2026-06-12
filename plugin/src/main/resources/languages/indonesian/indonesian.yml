@@ -1,0 +1,68 @@
+help: |
+  <empty>
+  &#35ADFF&l  AquaLang &#CDCDCD- &fVersi: &#8DFF87[{version}]
+  <empty>
+  &#8BD5FF  /aqualang help &#CDCDCD- &fTampilkan pesan ini
+  &#8BD5FF  /aqualang list &#CDCDCD- &fDaftar bahasa yang terdaftar
+  &#8BD5FF  /aqualang aliases &#CDCDCD- &fTampilkan alias perintah
+  &#8BD5FF  /aqualang set &#FFE162<player> <language> &#CDCDCD- &fUbah bahasa seorang pemain
+  &#8BD5FF  /aqualang reset &#FFE162<player> &#CDCDCD- &fAtur ulang bahasa ke bawaan
+  &#8BD5FF  /aqualang info &#FFE162<player> &#CDCDCD- &fTampilkan bahasa pemain
+  &#8BD5FF  /aqualang reload &#CDCDCD- &fMuat ulang plugin dan bahasa
+  &#8BD5FF  /aqualang github status &#CDCDCD- &fLihat status koneksi GitHub dan informasi repositori
+  &#8BD5FF  /aqualang github sync &#CDCDCD- &fSinkronkan semua bahasa dengan repositori GitHub
+  <empty>
+
+not_found_path: "&#FF3535Jalur tidak ditemukan: &#FFE162{path}"
+invalid_lang_format: "&#FF3535Format bahasa tidak valid: &#FFE162{input}"
+invalid_placeholder_format: "&#FF3535Format placeholder tidak valid: &#FFE162{placeholder}"
+file_not_found: "&#FF3535Berkas tidak ditemukan: &#FFE162{file}"
+not_translated: "&#FFE162Belum diterjemahkan: &#8BD5FF{path}"
+
+list:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fBahasa yang terdaftar:"
+  format: "&#CDCDCD  - &#FFE162{locale} &#CDCDCD→ &#8BD5FF{language}"
+
+aliases:
+  header: "&#35ADFF&lAquaLang &#CDCDCD» &fAlias perintah:"
+  format: "&#CDCDCD  - &#8BD5FF{command}"
+
+usage:
+  language-command: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Penggunaan yang benar: &f/lang <locale/lang>"
+  set: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Penggunaan yang benar: &f/aqualang set &#CDCDCD<player> <language>"
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Penggunaan yang benar: &f/aqualang reset &#CDCDCD<player>"
+  info: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Penggunaan yang benar: &f/aqualang info &#CDCDCD<player>"
+
+info:
+  format: "&#35ADFF&lAquaLang &#CDCDCD» &fBahasa &#CDCDCD{player} &#8BD5FF({language})"
+
+success:
+  other-language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFBahasa &f{player} &#8BD5FFtelah diubah menjadi &#FFE162{language}&#8BD5FF."
+  language-set: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFBahasamu telah diubah menjadi &#FFE162{language}&#8BD5FF."
+  reset: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFBahasa &f{player} &#8BD5FFtelah diatur ulang."
+  reload: "&#35ADFF&lAquaLang &#CDCDCD» &#8DFF87Berhasil dimuat ulang."
+
+github:
+  usage: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Penggunaan yang benar: &f/aqualang github <sync|status>"
+
+  sync:
+    start: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFMemulai sinkronisasi GitHub..."
+    success: "&#35ADFF&lAquaLang &#CDCDCD» &#8BD5FFSinkronisasi GitHub berhasil diselesaikan."
+    no-changes: "&#35ADFF&lAquaLang &#CDCDCD» &#FFE162Tidak ada perubahan terdeteksi. Semuanya sudah terbaru."
+    failed: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Sinkronisasi GitHub gagal. Periksa konsol."
+
+  status:
+    header: "&#35ADFF&lAquaLang &#CDCDCD» &fStatus sinkronisasi GitHub:"
+    repository: "&#CDCDCD  • &#8BD5FFRepositori: &#FFE162{repo}"
+    branch: "&#CDCDCD  • &#8BD5FFCabang: &#FFE162{branch}"
+    auth: "&#CDCDCD  • &#8BD5FFAutentikasi: &#FFE162{auth}"
+    remote-root: "&#CDCDCD  • &#8BD5FFJalur jarak jauh: &#FFE162{path}"
+    local-root: "&#CDCDCD  • &#8BD5FFJalur lokal: &#FFE162{path}"
+    create-missing: "&#CDCDCD  • &#8BD5FFBuat berkas yang hilang: &#FFE162{value}"
+    overwrite-existing: "&#CDCDCD  • &#8BD5FFTimpa berkas yang ada: &#FFE162{value}"
+    delete-missing: "&#CDCDCD  • &#8BD5FFHapus berkas yang hilang: &#FFE162{value}"
+    reload-after-sync: "&#CDCDCD  • &#8BD5FFMuat ulang setelah sinkronisasi: &#FFE162{value}"
+
+errors:
+  no-permission: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Kamu tidak memiliki izin untuk menggunakan perintah ini."
+  language-not-found: "&#35ADFF&lAquaLang &#CDCDCD» &#FF3535Bahasa &#FFE162{input} &#FF3535tidak terdaftar."

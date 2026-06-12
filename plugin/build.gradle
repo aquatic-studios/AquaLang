@@ -1,0 +1,90 @@
+plugins {
+    id 'com.gradleup.shadow' version '9.4.2'
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+
+    implementation project(':api')
+
+    implementation('com.h2database:h2:2.2.224') {
+        exclude group: 'org.slf4j', module: 'slf4j-api'
+    }
+    implementation 'net.kyori:adventure-api:4.21.0'
+    implementation 'net.kyori:adventure-text-minimessage:4.21.0'
+    implementation 'net.kyori:adventure-text-serializer-legacy:4.21.0'
+    implementation 'io.github.revxrsal:zapper.api:1.0.3'
+    implementation 'org.bstats:bstats-bukkit:3.2.1'
+
+    implementation('com.zaxxer:HikariCP:4.0.3') {
+        exclude group: 'org.slf4j', module: 'slf4j-api'
+    }
+}
+
+def relocateBase = 'com.aquaticstudios.aqualang.libs'
+
+shadowJar {
+    archiveBaseName.set('AquaLang')
+    archiveClassifier.set('')
+    archiveVersion.set(project.version.toString())
+
+    relocate 'com.zaxxer.hikari', "${relocateBase}.hikari"
+    relocate 'org.bstats', "${relocateBase}.bstats"
+    relocate 'net.kyori', "${relocateBase}.kyori"
+    relocate 'org.jetbrains', "${relocateBase}.jetbrains"
+    relocate 'org.h2', "${relocateBase}.h2"
+    relocate 'org.intellij', "${relocateBase}.intellij"
+    relocate 'revxrsal.zapper', "${relocateBase}.revxrsal"
+
+    exclude 'META-INF/MANIFEST.MF'
+    exclude 'META-INF/maven/**'
+    exclude 'META-INF/native-image/**'
+    exclude 'META-INF/versions/**'
+    exclude 'META-INF/services/**'
+    exclude 'META-INF/*.SF'
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+}
+
+tasks.named('shadowJar') {
+    doLast {
+        def jar = archiveFile.get().asFile
+        def tmp = new File(jar.parentFile, jar.name + '.tmp')
+        new java.util.zip.ZipFile(jar).withCloseable { zin ->
+            new java.util.zip.ZipOutputStream(new FileOutputStream(tmp)).withCloseable { zout ->
+                zin.entries().each { e ->
+                    zout.putNextEntry(new java.util.zip.ZipEntry(e.name))
+                    if (e.name == 'META-INF/MANIFEST.MF') {
+                        def kept = zin.getInputStream(e).readLines().findAll {
+                            !it.toLowerCase().startsWith('multi-release')
+                        }
+                        zout.write((kept.join('\n') + '\n').getBytes('UTF-8'))
+                    } else if (!e.directory) {
+                        zin.getInputStream(e).withCloseable { zout << it }
+                    }
+                    zout.closeEntry()
+                }
+            }
+        }
+        jar.delete()
+        tmp.renameTo(jar)
+    }
+}
+
+tasks.named('build') {
+    dependsOn tasks.named('shadowJar')
+}
+
+tasks.named('jar') {
+    archiveClassifier.set('plain')
+}
+
+processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
