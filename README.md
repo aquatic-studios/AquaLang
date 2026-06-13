@@ -25,8 +25,8 @@ can translate their own messages into each player's language.
 - Languages cached in memory on join — no database query per placeholder
 - PlaceholderAPI expansions: `%aqlang_(file)_(key)%`, `%aqualang_language%`, `%aqualang_locale%`
 - GitHub sync of language files (content-hash diffing, Zip-Slip protection)
-- 5 databases: H2, SQLite, MySQL, MariaDB, PostgreSQL — HikariCP, async writes
-- The JDBC driver is downloaded only for the database you pick
+- 3 databases: SQLite (default), MySQL, MariaDB — HikariCP, async writes
+- SQLite works out of the box; the MySQL/MariaDB driver is downloaded only if you pick it
 - Runs on Folia from the same jar
 - HEX, MiniMessage and legacy color codes
 - API with `CompletableFuture`, namespaces and cancellable events
