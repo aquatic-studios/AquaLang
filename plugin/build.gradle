@@ -8,9 +8,7 @@ dependencies {
 
     implementation project(':api')
 
-    implementation('com.h2database:h2:2.2.224') {
-        exclude group: 'org.slf4j', module: 'slf4j-api'
-    }
+    implementation 'org.xerial:sqlite-jdbc:3.46.1.3'
     implementation 'net.kyori:adventure-api:4.21.0'
     implementation 'net.kyori:adventure-text-minimessage:4.21.0'
     implementation 'net.kyori:adventure-text-serializer-legacy:4.21.0'
@@ -33,8 +31,8 @@ shadowJar {
     relocate 'org.bstats', "${relocateBase}.bstats"
     relocate 'net.kyori', "${relocateBase}.kyori"
     relocate 'org.jetbrains', "${relocateBase}.jetbrains"
-    relocate 'org.h2', "${relocateBase}.h2"
     relocate 'org.intellij', "${relocateBase}.intellij"
+    relocate 'org.sqlite', "${relocateBase}.sqlite"
     relocate 'revxrsal.zapper', "${relocateBase}.revxrsal"
 
     exclude 'META-INF/MANIFEST.MF'

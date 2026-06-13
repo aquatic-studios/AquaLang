@@ -25,22 +25,10 @@ public enum Libraries {
             relocate("com{}mysql", "com.aquaticstudios.aqualang.libs.mysql")
     ),
 
-    SQLITE(
-            DatabaseType.SQLITE,
-            new Dependency("org.xerial", "sqlite-jdbc", "3.46.1.3"),
-            relocate("org{}sqlite", "com.aquaticstudios.aqualang.libs.sqlite")
-    ),
-
     MARIADB(
             DatabaseType.MARIADB,
             new Dependency("org.mariadb.jdbc", "mariadb-java-client", "3.4.1"),
             relocate("org{}mariadb", "com.aquaticstudios.aqualang.libs.mariadb")
-    ),
-
-    POSTGRESQL(
-            DatabaseType.POSTGRESQL,
-            new Dependency("org.postgresql", "postgresql", "42.7.4"),
-            relocate("org{}postgresql", "com.aquaticstudios.aqualang.libs.postgresql")
     );
 
     private final DatabaseType type;

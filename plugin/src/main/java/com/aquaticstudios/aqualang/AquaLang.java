@@ -72,11 +72,11 @@ public final class AquaLang extends JavaPlugin {
     }
 
     private DatabaseType resolveDatabaseType() {
-        String typeName = getConfig().getString("database.type", "H2");
+        String typeName = getConfig().getString("database.type", "SQLITE");
         try {
             return DatabaseType.valueOf(typeName.toUpperCase());
         } catch (IllegalArgumentException e) {
-            return DatabaseType.H2;
+            return DatabaseType.SQLITE;
         }
     }
 

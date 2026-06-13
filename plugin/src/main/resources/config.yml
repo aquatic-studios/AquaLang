@@ -1,7 +1,7 @@
 database:
-  type: "h2" # h2, sqlite, mysql, mariadb, postgresql
+  type: "sqlite" # sqlite, mysql, mariadb
 
-  # only used by mysql, mariadb and postgresql
+  # only used by mysql and mariadb
   address: "localhost"
   port: 3306
   database: "aqualang"
